@@ -1,5 +1,5 @@
 <?php
-require_once('check-session.php');
+require_once('library/check-session.php');
 require_once('db/connex.php');
 
 if($_SERVER['REQUEST_METHOD'] != 'POST'){

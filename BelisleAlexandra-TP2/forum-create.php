@@ -1,5 +1,7 @@
 <?php
+require_once('library/check-session.php');
 require_once("db/connex.php");
+
 $sql = "SELECT forumId, forumTitle, forumArticle, userUsername, forumDate FROM forum INNER JOIN user on userId=forumUserId";
 $result = mysqli_query($connex, $sql);
 
